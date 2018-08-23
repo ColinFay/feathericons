@@ -6,9 +6,11 @@
 The goal of {feathericons} is to give access to feathericons svg icons
 in Shiny.
 
+More about Feather Icons on <https://feathericons.com/>
+
 ## Installation
 
-You can install the released version of feathericons from GitHub:
+You can install the dev version of feathericons from GitHub:
 
 ``` r
 remotes::install_github("ColinFay/feathericons")
@@ -18,7 +20,7 @@ remotes::install_github("ColinFay/feathericons")
 
 You’ll need to call `use_feather_icons` in your Shiny UI. Then, an icon
 is added with `feather_icons`, which takes as arguments the name of the
-icon
+icon.
 
 ``` r
 library(shiny)
