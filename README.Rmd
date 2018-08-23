@@ -1,0 +1,82 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  eval = FALSE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# feathericons
+
+The goal of {feathericons} is to give access to feathericons svg icons in Shiny. 
+
+## Installation
+
+You can install the released version of feathericons from GitHub:
+
+``` r
+remotes::install_github("ColinFay/feathericons")
+```
+
+## How to use
+
+You'll need to call `use_feather_icons` in your Shiny UI. Then, an icon is added with `feather_icons`, which takes as arguments the name of the icon
+
+```{r example}
+library(shiny)
+library(feathericons)
+
+ui <- fluidPage(
+  use_feather_icons(), 
+  tags$p(feather_icons("circle"), "Log in")
+)
+
+server <- function(input, output, session) {
+  
+}
+
+shinyApp(ui, server)
+```
+
+## List of icons 
+
+The list is available as a vector: 
+
+```{r eval = TRUE}
+feathericons::icons_list
+```
+
+## All current supported icons : 
+
+Run this chunk to get all supported icons and the results:
+
+```{r}
+library(shiny)
+
+ui <- fluidPage(
+  use_feather_icons(),
+  lapply(icons_list, function(x){
+    HTML(feather_icons(x), ":", x)
+    }
+    )
+)
+
+server <- function(input, output, session) {
+  
+}
+
+shinyApp(ui, server)
+```
+
+![](fig-readme/feather-icons.png)
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
