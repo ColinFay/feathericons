@@ -8,9 +8,11 @@ LazyData: true
 URL: https://github.com/ColinFay/feathericons
 BugReports: https://github.com/ColinFay/feathericons/issues
 Encoding: UTF-8
+Depends: R (>= 2.10)
 Suggests: 
     testthat
 Imports: 
     attempt,
-    htmltools
+    htmltools,
+    glue
 RoxygenNote: 6.0.1

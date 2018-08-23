@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 
 The goal of {feathericons} is to give access to feathericons svg icons in Shiny. 
 
+More about Feather Icons on <https://feathericons.com/>
+
 ## Installation
 
 You can install the released version of feathericons from GitHub:

@@ -18,5 +18,5 @@ an HTML div
 A Feather Icon div
 }
 \examples{
-feather_icons("circle", "Hello circle!")
+feather_icons("circle")
 }

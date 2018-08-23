@@ -3,5 +3,8 @@
 export(feather_icons)
 export(use_feather_icons)
 importFrom(attempt,stop_if_not)
+importFrom(glue,glue)
+importFrom(htmltools,HTML)
+importFrom(htmltools,includeScript)
 importFrom(htmltools,tagList)
 importFrom(htmltools,tags)

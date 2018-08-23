@@ -3,7 +3,7 @@
 #' @return an HTML taglist
 #' @export
 #'
-#' @importFrom htmltools tagList tags
+#' @importFrom htmltools tagList tags includeScript
 #'
 #' @examples
 #' use_feather_icons()
