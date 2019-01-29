@@ -14,7 +14,7 @@
 #' feather_icons("circle")
 
 feather_icons <- function(icon){
-  stop_if_not(icon, ~ .x %in% icons_list, "This icon is not available")
+  stop_if_not(icon, ~ .x %in% feathericons::icons_list, "This icon is not available")
   HTML(
       glue(
       "<div data-feather = '{icon}' ></div> "
